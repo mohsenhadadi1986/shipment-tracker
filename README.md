@@ -1,8 +1,11 @@
 # Shipment & Container Tracker
 
-A learning project for preparing a **Full Stack Developer** interview at a shipping company (MSC-style stack: **.NET + SQL Server + frontend**).
+A learning project for preparing a **Full Stack Developer** interview on the **myMSC** platform (shipping company). Target stack coverage:
 
-We build a small **Shipment & Container Tracker** in small pull requests. Each step is meant to be reviewed, learned from, and merged by you — teaching is the main goal.
+- **Required on the job:** C#, .NET Framework, ASP.NET MVC, SQL Server, JavaScript/jQuery, React
+- **Preferred:** Angular, Entity Framework, WCF, DevOps, Scrum
+
+We build a small **Shipment & Container Tracker** in small pull requests. Each step is meant to be reviewed, learned from, and merged by you — teaching is the main goal. The roadmap mixes the modern stack (.NET 8 Web API + EF Core + React) with deliberate practice of the **legacy-style** pieces (ASP.NET MVC + Razor + jQuery, plus a WCF / .NET Framework theory note) that enterprise shipping apps still use.
 
 ## Planned roadmap
 
@@ -15,7 +18,9 @@ We build a small **Shipment & Container Tracker** in small pull requests. Each s
 | **5** | JWT authentication & authorization |
 | **6** | xUnit tests (unit + integration) |
 | **7** | React (TypeScript, Vite) frontend |
-| **8** | Docker Compose full stack + GitHub Actions CI |
+| **8** | ASP.NET MVC + Razor + jQuery AJAX — small server-rendered area (e.g. ports/shipments list) calling the API, to practise the legacy stack and contrast with the React SPA |
+| **9** | Theory/doc: WCF and .NET Framework vs modern .NET (SOAP vs REST, bindings/contracts, why WCF is legacy, CoreWCF, Framework 4.x vs .NET 8) + interview Q&A; code optional/minimal |
+| **10** | Docker Compose full stack + GitHub Actions CI (DevOps) |
 
 This PR is **step 1 only**.
 
@@ -38,7 +43,7 @@ docs/                                # Teaching notes per step
 - **Infrastructure** owns persistence concerns (EF Core, SQL Server).
 - **Api** is the composition root: DI, middleware, endpoints.
 
-A single project would work for a tiny demo, but this split matches interview conversations about separation of concerns and scales cleanly into steps 2–6.
+A single project would work for a tiny demo, but this split matches interview conversations about separation of concerns and scales cleanly through the later API, SQL, and frontend steps.
 
 ## Prerequisites
 

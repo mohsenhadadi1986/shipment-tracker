@@ -255,11 +255,16 @@ If you change the password in `.env`, also update `ConnectionStrings:DefaultConn
 
 ## 7. What this step deliberately does *not* include
 
+Full roadmap (including MVC + jQuery and the WCF / .NET Framework theory note) lives in the root [README](../README.md). This step intentionally skips:
+
 - No CRUD controllers / minimal APIs for resources → **step 2**
 - No DTOs, validation attributes, ProblemDetails → **step 4**
 - No auth → **step 5**
 - No tests → **step 6**
 - No React UI → **step 7**
+- No ASP.NET MVC + Razor + jQuery AJAX → **step 8**
+- No WCF / .NET Framework vs modern .NET teaching note → **step 9**
+- No full-stack Docker Compose + CI → **step 10**
 
 You *should* be able to: build the solution, start SQL Server, apply the migration, hit `/health` and see `Healthy`, open Swagger.
 
